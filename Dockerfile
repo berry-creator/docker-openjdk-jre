@@ -1,8 +1,8 @@
-FROM letsdone/ubuntu:focal-aarch64
+FROM letsdone/ubuntu:focal
 
 LABEL vendor=letsdone \
   maintainer="letsdone" \
-  name="openjdk-8-jre base image for aarch64" \
+  name="openjdk-8-jre base image" \
   build-date="2021-09-10"
 
 RUN apt-get update && apt-get upgrade \
