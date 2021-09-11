@@ -6,7 +6,7 @@ LABEL vendor=letsdone \
   build-date="2021-09-10"
 
 RUN apt-get update && apt-get upgrade \
-  && apt-get install -y openjdk-8-jre-headless \
+  && apt-get install -y openjdk-11-jre-headless \
   && apt-get clean && apt-get autoclean && apt-get autoremove \
   && rm -rf /var/cache/apt/archives \
   && rm -rf /tmp/*
